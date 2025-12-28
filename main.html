@@ -1,68 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio wesbite</title>
+  <title>Noah's Portfolio</title>
+
 
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chicagoflf" type="text/css"/>
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+
+<div class="background"></div>
+
 <div class="navbar">
-  <a> Noah</a>
+  <a class="apple-logo"> Noah</a>
   <a class="active" href="#home">Home</a>
-  <a href="#programming">programming</a>
+  <a href="#programming">Programming</a>
   <a href="#robotics">Robotics</a>
+  <a href="#projects">Projects</a>
   <a href="#about">About</a>
 </div>
 
 
-<div class="gettoknow"> 
-  <div class="info_task_bar">
-    <div class = "buttons">
-      <button class="exit"></button>
-      <button class="close"></button>
-      <button class="increase"></button>
+<div class="window about-me">
+  <div class="window-header">
+    <div class="window-buttons">
+      <span class="exit"></span>
+      <span class="close"></span>
+      <span class="increase"></span>
     </div>
-    
-
-
+    <span class="window-title">About Me</span>
   </div>
-<h1> Hello, i'm Noah </h1>
+  <div class="window-content">
+    <h1>Hello, I'm Noah</h1>
+    <p>Welcome to my portfolio! I program robotics, and create websites and software for anything to develop my coding.</p>
+  </div>
 </div>
 
+
+<div class="window programming">
+  <div class="window-header">
+    <div class="window-buttons">
+      <span class="exit"></span>
+      <span class="close"></span>
+      <span class="increase"></span>
+    </div>
+    <span class="window-title">Programming</span>
+  </div>
+  <div class="window-content">
+    <ul>
+      <li>Python – projects and scripts</li>
+      <li>Web development – HTML, CSS, JS</li>
+      <li>Arduino & Microcontrollers</li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="window robotics">
+  <div class="window-header">
+    <div class="window-buttons">
+      <span class="exit"></span>
+      <span class="close"></span>
+      <span class="increase"></span>
+    </div>
+    <span class="window-title">Robotics</span>
+  </div>
+  <div class="window-content">
+    <p>Robotics projects including Arduino-controlled robot and automation experiments using AI / machine learning.</p>
+  </div>
+</div>
+
+<div class="window projects">
+  <div class="window-header">
+    <div class="window-buttons">
+      <span class="exit"></span>
+      <span class="close"></span>
+      <span class="increase"></span>
+    </div>
+    <span class="window-title">Projects</span>
+  </div>
+  <div class="window-content">
+    <ul>
+      <li>Portfolio Website – this retro MacOS design</li>
+      <li>Space Invaders Game – Python & Pygame</li>
+      <li>Arduino Robotics – obstacle avoiding robot</li>
+    </ul>
+  </div>
+</div>
 
 <div class="language_bar">
-  <div>
-    <button class="img-btn">
-    <img src="media/python-logo.png" >
-    </button>
-
-    <button class="img-btn">
-    <img src="media/arduino.png">
-    </button>
-
-    <button class="img-btn">
-    <img src="media/web_dev.png" >
-    </button>
-
-    <button class="img-btn">
-    <img src="media/xcode_logo.png" >
-    </button>
-
+  <div class="dock">
+    <button class="img-btn"><img src="media/python-logo.png" alt="Python"></button>
+    <button class="img-btn"><img src="media/arduino.png" alt="Arduino"></button>
+    <button class="img-btn"><img src="media/web_dev.png" alt="Web Dev"></button>
+    <button class="img-btn"><img src="media/xcode_logo.png" alt="Xcode"></button>
   </div>
-
 </div>
 
-
-
 </body>
-
-
-
-
 </html>

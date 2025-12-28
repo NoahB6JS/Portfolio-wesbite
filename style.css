@@ -1,111 +1,108 @@
-body {
-  margin: 0;
-  font-family: 'ChicagoFLFRegular';
-  background-image: url("media/backgroundg.png");
-  background-size: cover;     
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('media/background.png');
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+
+body {
+  font-family: 'ChicagoFLFRegular', sans-serif;
+  margin: 0;
+  color: #000;
 }
 
 
 .navbar {
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(200,200,200,0.8);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 18px;               
-  padding: 3px 10px;
-  background-color: #c0c0c0;  
-  min-height: 20px;           
-  white-space: nowrap;
-  border-bottom: 1px ;
-}
-
-
-.navbar a {
-  color: #000;
-  text-decoration: none;
+  padding: 0 10px;
   font-size: 14px;
-  padding: 2px 6px;
+  z-index: 10;
+}
+.navbar a { margin-left: 15px; text-decoration: none; color: #000; }
+.navbar a.active { font-weight: bold; }
+.apple-logo { font-weight: bold; margin-right: 30px; }
+
+
+.window {
+  width: 400px;
+  background-color: rgba(240,240,240,0.95);
+  border: 2px solid #aaa;
+  border-radius: 6px;
+  position: absolute;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.navbar a:hover {
-  color: #000000;
-  font-weight: bold;
+.window-header {
+  height: 30px;
+  background: #ddd;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
-
-.navbar .logo {
-  font-weight: normal;
-  margin-right: 10px;
+.window-buttons span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
 }
+.exit { background-color: #ff605c; }
+.close { background-color: #ffbd44; }
+.increase { background-color: #00ca56; }
 
-.gettoknow {
-  background-color: #c0c0c0;
-  padding: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 150px;
-  border-radius: 10px;
+.window-title { margin-left: 10px; font-size: 14px; font-weight: bold; }
+.window-content { padding: 15px; }
 
 
-}
+.about-me { top: 100px; left: 50px; }
+.programming { top: 150px; left: 500px; }
+.robotics { top: 300px; left: 250px; }
+.projects { top: 460px; left: 900px; }
 
-.exit {
-
-  background-color: red;
-  border-radius: 45%;
-  min-height: 15px;
-  min-width: 15px;
-  border: none;
-}
-
-.close {
-
-  background-color: rgb(255, 191, 0);
-  border-radius: 45%;
-  min-height: 15px;
-  min-width: 15px;
-  border: none;
-}
-
-.increase {
-
-  background-color: rgb(42, 143, 2);
-  border-radius: 45%;
-  min-height: 15px;
-  min-width: 15px;
-  border: none;
-}
 
 .language_bar {
   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 20px;
+  right: 20px;
   padding: 10px 0;
-  background-color: rgba(128, 128, 128, 0.5); 
-  display: flex;
-  justify-content: center; 
-  gap: 20px; 
+  background-color: rgba(128,128,128,0.5);
   border-radius: 12px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
 }
-
+.dock {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 .img-btn {
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
-  gap: 50px;
+  padding: 0;
 }
-
 .img-btn img {
-  width: 80px; 
+  width: 64px;
   height: auto;
-  transition: transform 0.3s ease; 
+  transition: transform 0.2s ease;
 }
-
-.img-btn:hover img {
-  transform: scale(1.2);
-}
+.img-btn:hover img { transform: scale(1.2); }
