@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'ChicagoFLFRegular', Arial, sans-serif;
+  background-image: url("media/bg.png");
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.navbar {
+
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;               
+  padding: 3px 10px;
+  background-color: #c0c0c0;  
+  min-height: 20px;           
+  white-space: nowrap;
+  border-bottom: 1px solid #000;
+}
+
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 2px 6px;
+}
+
+.navbar a:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.navbar .logo {
+  font-weight: normal;
+  margin-right: 10px;
+}
