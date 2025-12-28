@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'ChicagoFLFRegular', Arial, sans-serif;
-  background-image: url("media/bg.png");
+  font-family: 'ChicagoFLFRegular';
+  background-image: url("media/backgroundg.png");
   background-size: cover;     
   background-position: center;
   background-repeat: no-repeat;
@@ -9,8 +9,7 @@ body {
 
 
 .navbar {
-
-
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -19,7 +18,7 @@ body {
   background-color: #c0c0c0;  
   min-height: 20px;           
   white-space: nowrap;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px ;
 }
 
 
@@ -39,4 +38,74 @@ body {
 .navbar .logo {
   font-weight: normal;
   margin-right: 10px;
+}
+
+.gettoknow {
+  background-color: #c0c0c0;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+  border-radius: 10px;
+
+
+}
+
+.exit {
+
+  background-color: red;
+  border-radius: 45%;
+  min-height: 15px;
+  min-width: 15px;
+  border: none;
+}
+
+.close {
+
+  background-color: rgb(255, 191, 0);
+  border-radius: 45%;
+  min-height: 15px;
+  min-width: 15px;
+  border: none;
+}
+
+.increase {
+
+  background-color: rgb(42, 143, 2);
+  border-radius: 45%;
+  min-height: 15px;
+  min-width: 15px;
+  border: none;
+}
+
+.language_bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(128, 128, 128, 0.5); 
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  border-radius: 12px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.img-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  gap: 50px;
+}
+
+.img-btn img {
+  width: 80px; 
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.img-btn:hover img {
+  transform: scale(1.2);
 }
