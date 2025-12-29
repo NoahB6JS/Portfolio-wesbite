@@ -11,6 +11,35 @@
 
 <body>
 
+<div class="app-window" id="myAppWindow">
+  <div class="window-header">
+    <span class="window-title">My App</span>
+    <button class="close-btn" onclick="closeApp()">X</button>
+  </div>
+  <div class="window-content">
+    <h2>Welcome!</h2>
+    <p>This is your desktop-style app window.</p>
+    <p>You can put any content here: images, text, buttons, etc.</p>
+  </div>
+</div>
+
+<script>
+  const appButton = document.querySelector('.img-app');
+  const appWindow = document.getElementById('myAppWindow');
+
+ 
+  appButton.addEventListener('click', () => {
+    appWindow.style.display = 'block';
+  });
+
+ 
+  function closeApp() {
+    appWindow.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
 
 <div class="background"></div>
 
@@ -35,7 +64,7 @@
   </div>
   <div class="window-content">
     <h1>Hello, I'm Noah</h1>
-    <p>Welcome to my portfolio! I program robotics, and create websites and software for anything to develop my coding.</p>
+    <p>Welcome to my portfolio! I program robotics, and create websites & software for anything to develop my coding.</p>
   </div>
 </div>
 
@@ -86,10 +115,11 @@
     <ul>
       <li>Portfolio Website – this retro MacOS design</li>
       <li>Space Invaders Game – Python & Pygame</li>
-      <li>Arduino Robotics – obstacle avoiding robot</li>
+      <li>Arduino Robotics – Tinker kit robotic arm</li>
     </ul>
   </div>
 </div>
+
 
 <div class="language_bar">
   <div class="dock">
