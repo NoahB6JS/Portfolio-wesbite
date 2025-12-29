@@ -108,15 +108,15 @@ body {
 .img-btn:hover img { transform: scale(1.2); }
 
 
-/* App Button */
+
 .img-app img {
   width: 60px;
   cursor: pointer;
 }
 
-/* App Window */
+
 .app-window {
-  display: none; /* hidden by default */
+  display: none; 
   position: fixed;
   top: 100px;
   left: 100px;
@@ -128,11 +128,11 @@ body {
   z-index: 10;
 }
 
-/* Window Header */
+
 .window-header {
   background: #ddd;
   padding: 5px;
-  cursor: move; /* optional draggable style */
+  cursor: move; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,7 +142,7 @@ body {
   font-weight: bold;
 }
 
-/* Close button */
+
 .close-btn {
   cursor: pointer;
   background: red;
@@ -152,12 +152,11 @@ body {
   font-size: 14px;
 }
 
-/* Window Content */
+
 .window-content {
   padding: 10px;
 }
 
-/* Image Previews or optional styling inside the window */
 .image-preview {
   width: 100px;
   margin: 5px;
