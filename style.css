@@ -30,7 +30,8 @@ body {
 
 .window {
   position: absolute;
-  width: 420px;
+  min-width: 460px;
+  max-width: 800px;
   background: rgba(245,245,245,0.95);
   border: 2px solid #aaa;
   border-radius: 6px;
@@ -44,8 +45,8 @@ body {
   left: 80px;
 }
 
-#programming { top: 120px; left: 520px; }
-#robotics { top: 300px; left: 120px; }
+#programming { top: 127px; left: 820px; }
+#robotics { top: 300px; left: 320px; }
 #projects { top: 350px; left: 580px; }
 
 .window-header {
@@ -123,3 +124,30 @@ body {
   transform: scale(1.25);
 }
 
+
+.about-section {
+  margin-top: 14px;
+}
+
+.about-section h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about-section ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.about-section li {
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.profile-pic {
+
+  max-width: 100px;
+  min-height: 100px;
+  border-radius: 55%;
+}
