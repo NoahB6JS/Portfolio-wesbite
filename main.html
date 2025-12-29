@@ -2,77 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Noah's Portfolio</title>
+  <title>Noah – Retro Mac CV</title>
 
-
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chicagoflf" type="text/css"/>
+  <link rel="stylesheet" href="https://fontlibrary.org//face/chicagoflf">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="app-window" id="myAppWindow">
-  <div class="window-header">
-    <span class="window-title">My App</span>
-    <button class="close-btn" onclick="closeApp()">X</button>
-  </div>
-  <div class="window-content">
-    <h2>Welcome!</h2>
-    <p>This is your desktop-style app window.</p>
-    <p>You can put any content here: images, text, buttons, etc.</p>
-  </div>
-</div>
-
-<script>
-  const appButton = document.querySelector('.img-app');
-  const appWindow = document.getElementById('myAppWindow');
-
- 
-  appButton.addEventListener('click', () => {
-    appWindow.style.display = 'block';
-  });
-
- 
-  function closeApp() {
-    appWindow.style.display = 'none';
-  }
-</script>
-
-</body>
-</html>
-
-<div class="background"></div>
 
 <div class="navbar">
-  <a class="apple-logo"> Noah</a>
-  <a class="active" href="#home">Home</a>
-  <a href="#programming">Programming</a>
-  <a href="#robotics">Robotics</a>
-  <a href="#projects">Projects</a>
-  <a href="#about">About</a>
+  <span class="apple-logo"> Noah</span>
+  <a onclick="openWindow('programming')">Programming</a>
+  <a onclick="openWindow('robotics')">Robotics</a>
+  <a onclick="openWindow('projects')">Projects</a>
 </div>
 
 
-<div class="window about-me">
+<div class="window about" id="about">
   <div class="window-header">
     <div class="window-buttons">
-      <span class="exit"></span>
-      <span class="close"></span>
-      <span class="increase"></span>
+      <span class="exit disabled"></span>
+      <span class="close disabled"></span>
+      <span class="increase disabled"></span>
     </div>
     <span class="window-title">About Me</span>
   </div>
   <div class="window-content">
     <h1>Hello, I'm Noah</h1>
-    <p>Welcome to my portfolio! I program robotics, and create websites & software for anything to develop my coding.</p>
+    <p>
+      This is my CV website inspired by classic Mac OS.
+      I enjoy programming, robotics, and creative tech projects.
+    </p>
   </div>
 </div>
 
 
-<div class="window programming">
+<div class="window" id="programming">
   <div class="window-header">
     <div class="window-buttons">
-      <span class="exit"></span>
+      <span class="exit" onclick="closeWindow('programming')"></span>
       <span class="close"></span>
       <span class="increase"></span>
     </div>
@@ -80,42 +49,45 @@
   </div>
   <div class="window-content">
     <ul>
-      <li>Python – projects and scripts</li>
-      <li>Web development – HTML, CSS, JS</li>
-      <li>Arduino & Microcontrollers</li>
+      <li>Python & automation</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Pygame projects</li>
+      <li>Arduino programming</li>
     </ul>
   </div>
 </div>
 
 
-<div class="window robotics">
+<div class="window" id="robotics">
   <div class="window-header">
     <div class="window-buttons">
-      <span class="exit"></span>
+      <span class="exit" onclick="closeWindow('robotics')"></span>
       <span class="close"></span>
       <span class="increase"></span>
     </div>
     <span class="window-title">Robotics</span>
   </div>
   <div class="window-content">
-    <p>Robotics projects including Arduino-controlled robot and automation experiments using AI / machine learning.</p>
+    <p>Robots, sensors, hardware builds, and automation.</p>
   </div>
 </div>
 
-<div class="window projects">
+
+<div class="window" id="projects">
   <div class="window-header">
     <div class="window-buttons">
-      <span class="exit"></span>
+      <span class="exit" onclick="closeWindow('projects')"></span>
       <span class="close"></span>
       <span class="increase"></span>
     </div>
     <span class="window-title">Projects</span>
+   
   </div>
   <div class="window-content">
     <ul>
-      <li>Portfolio Website – this retro MacOS design</li>
-      <li>Space Invaders Game – Python & Pygame</li>
-      <li>Arduino Robotics – Tinker kit robotic arm</li>
+      <li>Retro Mac Portfolio</li>
+      <li>Space Invaders Clone</li>
+      <li>Arduino Robotics</li>
     </ul>
   </div>
 </div>
@@ -123,12 +95,21 @@
 
 <div class="language_bar">
   <div class="dock">
-    <button class="img-btn"><img src="media/python-logo.png" alt="Python"></button>
-    <button class="img-btn"><img src="media/arduino.png" alt="Arduino"></button>
-    <button class="img-btn"><img src="media/web_dev.png" alt="Web Dev"></button>
-    <button class="img-btn"><img src="media/xcode_logo.png" alt="Xcode"></button>
+    <button class="img-btn">
+      <img src="media/python-logo.png" alt="Python">
+    </button>
+    <button class="img-btn">
+      <img src="media/arduino.png" alt="Arduino">
+    </button>
+    <button class="img-btn">
+      <img src="media/web_dev.png" alt="Web Dev">
+    </button>
+    <button class="img-btn">
+      <img src="media/xcode_logo.png" alt="Xcode">
+    </button>
   </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
