@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Noah – Retro Mac CV</title>
+  <title>Noah - Retro Mac CV</title>
 
   <link rel="stylesheet" href="https://fontlibrary.org//face/chicagoflf">
   <link rel="stylesheet" href="style.css">
@@ -30,11 +30,11 @@
   </div>
   <div class="window-content about-content">
 
-  <div class="about-header">
-    <img src="media/noah.jpg" alt="Photo of Noah" class="profile-pic">
-
     <div class="about-text">
-      <h1>Hello, I’m Noah</h1>
+  <img src="media/noah.jpg" alt="photo of me" class="profile-photo">
+  <h1>Hello, I'm Noah</h1>
+ 
+      
       <p class="subtitle">Computer Science & AI Undergraduate</p>
     </div>
   </div>
@@ -166,11 +166,30 @@
   </div>
 </div>
 
+<div class="window_python" id="python">
+  <div class="window-header">
+    <div class="window-buttons">
+      <span class="exit" onclick="closeWindow('python')"></span>
+      <span class="close"></span>
+      <span class="increase"></span>
+    </div>
+    <span class="window-title">Python Projects</span>
+  </div>
+
+  <div class="window-content">
+    <ul>
+      <li>Facial recognition - Mac camera</li>
+      <li>QR code generator</li>
+      <li>Space Invaders</li>
+      
+    </ul>
+  </div>
+</div>
 
 <div class="language_bar">
   <div class="dock">
-    <button class="img-btn">
-      <img src="media/python-logo.png" alt="Python">
+    <button class="img-btn" onclick="openWindow('python', this)">
+    <img src="media/python-logo.png" alt="Python">
     </button>
     <button class="img-btn">
       <img src="media/arduino.png" alt="Arduino">
@@ -184,6 +203,8 @@
   </div>
 </div>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>

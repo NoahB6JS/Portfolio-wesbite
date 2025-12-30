@@ -41,7 +41,7 @@ body {
 
 .about {
   display: block;
-  top: 80px;
+  top: 40px;
   left: 80px;
 }
 
@@ -89,7 +89,7 @@ body {
   padding: 15px;
 }
 
-/*/ Dock at the bottom /*/
+
 .language_bar {
   position: fixed;
   bottom: 15px;
@@ -145,9 +145,41 @@ body {
   font-size: 13px;
 }
 
-.profile-pic {
+.window_python {
+  position: absolute;
+  min-width: 320px;
+  background: rgba(245,245,245,0.95);
+  border: 2px solid #aaa;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(12px) scale(0.9);
+  transform-origin: bottom center;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s cubic-bezier(.25,.8,.25,1);
 
-  max-width: 100px;
-  min-height: 100px;
-  border-radius: 55%;
+  z-index: 200;
+}
+
+.window_python.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 45%;
+}
+
+.profile-photo {
+  width: 150px;  
+  height: 150px;   
+  border-radius: 50%; 
+  object-fit: cover;  
+  display: block;
+  margin: 0 auto;    
 }
